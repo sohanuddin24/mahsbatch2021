@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>এম.এ.এইচ.এস. এসএসসি ব্যাচ ২০২১ ফাউন্ডেশন</title>
+<meta name="description" content="MAHS SSC Batch 2021 Foundation - একটি সামাজিক, সেবামুখী, নিঃস্বার্থ ও অরাজনৈতিক সংগঠন। মোচাগড়া, মুরাদনগর, কুমিল্লা।">
+<meta property="og:title" content="MAHS SSC Batch 2021 Foundation"><meta property="og:description" content="ঐক্যের বন্ধনে, মানবতার সেবায়। মোচাগড়া, মুরাদনগর, কুমিল্লা।"><meta property="og:type" content="website">
+<link rel="icon" href="images/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+:root{--b:#034a91;--b2:#0a6fd6;--bd:#02305f;--bl:#e8f2fd;--bg:#f6faff;--tx:#1c2a3a;--mu:#5a6b7d;--w:#fff;--r:16px;--sh:0 8px 30px rgba(3,74,145,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Hind Siliguri',sans-serif;color:var(--tx);background:var(--bg);line-height:1.8;font-size:17px}
+a{color:var(--b);text-decoration:none}
+img{max-width:100%}
+.wrap{max-width:1180px;margin:auto;padding:0 20px}
+h1,h2,h3{font-family:'Hind Siliguri','Poppins',sans-serif;line-height:1.35;color:var(--bd)}
+/* top bar + nav */
+.top{background:var(--bd);color:#cfe3fa;font-size:14px;padding:6px 0}
+.top .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:6px}
+.top a{color:#cfe3fa;margin-left:14px}
+header{background:var(--w);position:sticky;top:0;z-index:50;box-shadow:0 2px 14px rgba(0,0,0,.08)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;color:var(--b);line-height:1.2}
+.brand img{height:62px;width:62px;object-fit:contain}
+
+/* Typography fix for 2021 readability */
+.brand span { font-family: 'Poppins', sans-serif; font-size: 15px; letter-spacing: .2px; }
+.brand small { font-family: 'Hind Siliguri', sans-serif; font-size: 13.5px; font-weight: 700; color: var(--mu); margin-top: 4px; display: block; }
+
+nav ul{display:flex;list-style:none;gap:4px;align-items:center;}
+nav a{padding:9px 13px;border-radius:30px;font-weight:600;font-size:15.5px;color:var(--tx);transition:.2s; cursor: pointer;}
+nav a:hover,nav a.act{background:var(--bl);color:var(--b)}
+nav a.cta{background:var(--b);color:#fff}
+nav a.cta:hover,nav a.cta.act{background:var(--b2);color:#fff}
+
+/* Dropdown Sub-menu */
+.has-sub { position: relative; }
+.sub-nav { display: none; position: absolute; top: 100%; left: 0; background: var(--w); box-shadow: 0 8px 24px rgba(0,0,0,.12); border-radius: 12px; padding: 10px; flex-direction: column; min-width: 170px; z-index: 100; gap: 4px; border: 1px solid #e1ecf8; }
+.has-sub:hover .sub-nav { display: flex; }
+.sub-nav a { padding: 8px 14px; font-size: 15px; border-radius: 8px; font-weight: 600; display: block; }
+.sub-nav a:hover { background: var(--bl); }
+
+.burger{display:none;background:none;border:0;font-size:30px;color:var(--b);cursor:pointer}
+/* pages */
+.page{display:none;animation:fade .5s}
+.page.on{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+/* hero */
+.hero{background:linear-gradient(135deg,var(--bd),var(--b) 55%,var(--b2));color:#fff;padding:80px 0 90px;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:rgba(255,255,255,.07)}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;position:relative;z-index:1}
+.hero h1{color:#fff;font-size:clamp(30px,4.6vw,52px)}
+.hero p{color:#d8e8fa;margin:16px 0 28px;max-width:560px;font-size:18px}
+.tag{display:inline-block;background:rgba(255,255,255,.15);padding:4px 16px;border-radius:30px;font-size:14px;margin-bottom:16px;font-family:Poppins;letter-spacing:.5px}
+.hero .logo-box{background:#fff;border-radius:24px;padding:20px;box-shadow:0 20px 60px rgba(0,0,0,.3);text-align:center}
+.btn{display:inline-block;padding:12px 28px;border-radius:40px;font-weight:600;border:2px solid transparent;cursor:pointer;font-family:inherit;font-size:16px;transition:.25s}
+.btn-w{background:#fff;color:var(--b)}.btn-w:hover{background:var(--bl)}
+.btn-o{border-color:#fff;color:#fff;margin-left:10px}.btn-o:hover{background:rgba(255,255,255,.15)}
+.btn-b{background:var(--b);color:#fff}.btn-b:hover{background:var(--b2)}
+.btn-g{background:#1fa855;color:#fff}.btn-g:hover{background:#178a45}
+/* sections */
+section.s{padding:70px 0}
+.alt{background:var(--w)}
+.sh{text-align:center;margin-bottom:44px}
+.sh span{color:var(--b2);font-weight:600;font-size:14px;letter-spacing:1px;font-family:Poppins;text-transform:uppercase}
+.sh h2{font-size:clamp(26px,3.4vw,38px)}
+.sh p{color:var(--mu);max-width:640px;margin:8px auto 0}
+.sh:after{content:"";display:block;width:60px;height:4px;background:var(--b2);border-radius:4px;margin:14px auto 0}
+.grid{display:grid;gap:24px}
+.g2{grid-template-columns:repeat(2,1fr)}.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}
+.card{background:var(--w);border-radius:var(--r);padding:28px;box-shadow:var(--sh);border:1px solid #e1ecf8;transition:.3s}
+.card:hover{transform:translateY(-6px)}
+.card .ic{font-size:38px;margin-bottom:8px}
+.card h3{font-size:20px;margin-bottom:6px}
+.card p{color:var(--mu);font-size:16px}
+.stats{margin-top:-50px;position:relative;z-index:2}
+.stat{background:var(--w);border-radius:var(--r);padding:26px;text-align:center;box-shadow:var(--sh);border-bottom:4px solid var(--b2)}
+.stat b{display:block;font-size:34px;color:var(--b);font-family:'Hind Siliguri'}
+.stat span{color:var(--mu);font-size:15px}
+.quote{background:var(--bd);color:#fff;text-align:center;padding:60px 20px}
+.quote h2{color:#fff;font-size:clamp(24px,3.5vw,38px)}
+.quote p{color:#a8c9ee;font-family:Poppins;font-size:14px;margin-top:10px;letter-spacing:.5px}
+.page-h{background:linear-gradient(135deg,var(--bd),var(--b));color:#fff;text-align:center;padding:56px 20px}
+.page-h h1{color:#fff;font-size:clamp(28px,4vw,42px)}
+.page-h p{color:#cfe3fa}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.box{background:var(--bl);border-left:5px solid var(--b);padding:20px 24px;border-radius:0 var(--r) var(--r) 0;margin:18px 0}
+.ul{list-style:none}
+.ul li{padding:8px 0 8px 34px;position:relative}
+.ul li:before{content:"✔";position:absolute;left:0;color:#fff;background:var(--b2);width:24px;height:24px;border-radius:50%;font-size:13px;text-align:center;line-height:24px;top:11px}
+/* timeline */
+.tl{border-left:3px solid var(--b2);margin-left:14px;padding-left:28px}
+.tl div{position:relative;margin-bottom:26px}
+.tl div:before{content:"";position:absolute;left:-39px;top:6px;width:18px;height:18px;border-radius:50%;background:var(--b);border:4px solid var(--bl)}
+.tl h3{font-size:19px}
+/* committee */
+.person{text-align:center;padding:26px 18px}
+.av{width:84px;height:84px;border-radius:50%;background:linear-gradient(135deg,var(--b),var(--b2));color:#fff;display:flex;align-items:center;justify-content:center;font-size:32px;font-weight:700;margin:0 auto 12px}
+.person h3{font-size:19px}
+.person .role{display:inline-block;background:var(--bl);color:var(--b);padding:2px 14px;border-radius:20px;font-size:14px;font-weight:600;margin-top:4px}
+.lead .av{width:104px;height:104px;font-size:40px}
+/* constitution */
+details{background:var(--w);border:1px solid #dbe8f7;border-radius:12px;margin-bottom:12px;box-shadow:0 3px 12px rgba(3,74,145,.06)}
+summary{cursor:pointer;padding:16px 22px;font-weight:600;color:var(--b);font-size:18px;list-style:none;display:flex;justify-content:space-between}
+summary:after{content:"＋";font-size:22px}
+details[open] summary:after{content:"－"}
+details[open] summary{border-bottom:1px solid #e3eefb}
+.dc{padding:18px 24px}
+.dc h4{color:var(--b2);margin:12px 0 2px;font-size:17px}
+.dc p,.dc li{color:#33465a}
+.dc ol,.dc ul{padding-left:22px}
+/* form */
+.form{background:var(--w);border-radius:20px;box-shadow:var(--sh);padding:34px;border:1px solid #dbe8f7}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.fg .full{grid-column:1/-1}
+label{font-weight:600;font-size:15px;display:block;margin-bottom:4px;color:var(--bd)}
+input,select,textarea{width:100%;padding:11px 14px;border:1.5px solid #c9dcf1;border-radius:10px;font-family:inherit;font-size:16px;background:#fbfdff}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--b2);box-shadow:0 0 0 3px rgba(10,111,214,.15)}
+.oath{background:var(--bl);padding:20px 24px;border-radius:14px;margin:22px 0;font-size:15.5px}
+.oath ol{padding-left:20px;margin-top:6px}
+#pv{width:110px;height:130px;object-fit:cover;border:2px dashed var(--b2);border-radius:8px;display:none;margin-top:8px}
+.note{font-size:14px;color:var(--mu)}
+/* contact */
+.ci{display:flex;gap:14px;margin-bottom:20px}
+.ci i{font-style:normal;font-size:26px;background:var(--bl);width:52px;height:52px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex:none}
+.soc{display:flex;gap:12px;flex-wrap:wrap;margin-top:10px}
+.soc a{padding:10px 22px;border-radius:30px;color:#fff;font-weight:600}
+.fb{background:#1877f2}.ig{background:linear-gradient(45deg,#f09433,#dc2743,#bc1888)}.wa{background:#1fa855}
+.prose h3{margin:26px 0 6px}
+.prose ul{padding-left:22px}
+.prose p,.prose li{color:#33465a}
+/* footer */
+footer{background:var(--bd);color:#b9d3f1;padding:56px 0 0}
+footer .grid{grid-template-columns:1.5fr 1fr 1.2fr}
+footer h4{color:#fff;margin-bottom:12px;font-size:18px}
+footer a{color:#b9d3f1;display:block;padding:2px 0}footer a:hover{color:#fff}
+footer .logo{background:#fff;border-radius:12px;padding:6px;width:90px;margin-bottom:10px}
+.copy{border-top:1px solid rgba(255,255,255,.12);margin-top:36px;padding:16px 0;text-align:center;font-size:14px}
+.wafab{position:fixed;right:18px;bottom:18px;background:#1fa855;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 6px 20px rgba(0,0,0,.3);z-index:60}
+@media(max-width:900px){
+.burger{display:block}
+nav{position:absolute;top:78px;left:0;right:0;background:#fff;box-shadow:0 10px 20px rgba(0,0,0,.1);display:none;padding:10px 20px 20px}
+nav.open{display:block}nav ul{flex-direction:column;align-items:flex-start;}
+.hero .wrap,.two,.g2,.g3,.fg,footer .grid{grid-template-columns:1fr}
+.g4{grid-template-columns:repeat(2,1fr)}
+.hero .logo-box{max-width:300px}
+}
+@media print{header,.top,footer,.wafab,.no-print,.page-h{display:none!important}.form{box-shadow:none;border:0}}
+nav a{padding:8px 11px;font-size:15px}
+.gi{margin:0;border-radius:16px;overflow:hidden;box-shadow:var(--sh);cursor:pointer;background:#fff}
+.gi img{width:100%;height:250px;object-fit:cover;display:block;transition:.4s}
+.gi:hover img{transform:scale(1.06)}
+.gi figcaption{padding:12px 16px;font-size:15px;color:var(--mu)}
+#lbx{display:none;position:fixed;inset:0;background:rgba(0,0,0,.88);z-index:100;align-items:center;justify-content:center;cursor:zoom-out;padding:20px}
+#lbx img{max-width:100%;max-height:92vh;border-radius:10px}
+.pay{text-align:center}.pay .num{font-size:26px;font-weight:700;color:var(--bd);margin:6px 0 14px;letter-spacing:1px}
+.pay-logo { width: 80px; height: auto; margin: 0 auto 10px; display: block; }
+@media(max-width:1100px){
+    .burger{display:block}
+    nav{position:absolute;top:78px;left:0;right:0;background:#fff;box-shadow:0 10px 20px rgba(0,0,0,.1);display:none;padding:10px 20px 20px}
+    nav.open{display:block}nav ul{flex-direction:column;align-items:flex-start;}
+    .sub-nav { position: static; box-shadow: none; padding: 5px 0 5px 20px; background: transparent; display: none; border: none; min-width: 100%; }
+    .has-sub:focus-within .sub-nav, .has-sub:hover .sub-nav, .has-sub:active .sub-nav { display: flex; }
+}
+
+/* Member Table Styles */
+.member-table-container { overflow-x: auto; margin-top: 20px; }
+.member-table { width: 100%; border-collapse: collapse; min-width: 600px; }
+.member-table th, .member-table td { border: 1px solid #dbe8f7; padding: 12px 15px; text-align: left; }
+.member-table th { background-color: var(--bl); color: var(--bd); font-weight: 600; }
+.member-table tr:nth-child(even) { background-color: #fbfdff; }
+.member-table tr:hover { background-color: #f0f7ff; }
+.gender-section { margin-top: 40px; }
+.gender-title { color: var(--b); margin-bottom: 15px; border-bottom: 2px solid var(--b2); display: inline-block; padding-bottom: 5px; }
+
+</style>
+</head>
+<body>
+
+<div class="top"><div class="wrap">
+<span>📍 মোচাগড়া, মুরাদনগর, কুমিল্লা, বাংলাদেশ</span>
+<span><a href="tel:+8801302985478">📞 +880 1302-985478</a><a href="https://www.facebook.com/mahssscbatch2021foundation" target="_blank" rel="noopener">Facebook</a></span>
+</div></div>
+
+<header><div class="wrap">
+<a href="#home" class="brand"><img src="images/logo.jpg" alt="MAHS Logo" onerror="this.style.display='none'"><span>MAHS SSC BATCH 2021 FOUNDATION<small>এম.এ.এইচ.এস. এসএসসি ব্যাচ <span style="letter-spacing: 1.5px; font-size: 14.5px;">২০২১</span> ফাউন্ডেশন</small></span></a>
+<button class="burger" id="bg" aria-label="Menu">☰</button>
+<nav id="nav"><ul>
+<li><a href="#home" onclick="navTo('home')">হোম</a></li>
+<li><a href="#about" onclick="navTo('about')">আমাদের সম্পর্কে</a></li>
+<li><a href="#activities" onclick="navTo('activities')">কার্যক্রম</a></li>
+<li class="has-sub">
+    <a href="javascript:void(0)" onclick="navTo('committee')">কমিটি ▾</a>
+    <ul class="sub-nav">
+        <li><a href="#committee" onclick="navTo('committee')">কার্যনির্বাহী কমিটি</a></li>
+        <li><a href="#members" onclick="navTo('members')">সদস্যবৃন্দ</a></li>
+        <li><a href="#gallery" onclick="navTo('gallery')">গ্যালারি</a></li>
+    </ul>
+</li>
+<li><a href="#constitution" onclick="navTo('constitution')">গঠনতন্ত্র</a></li>
+<li><a href="#donate" onclick="navTo('donate')">অনুদান</a></li>
+<li><a href="#contact" onclick="navTo('contact')">যোগাযোগ</a></li>
+<li><a href="#register" class="cta" onclick="navTo('register')">সদস্য হোন</a></li>
+</ul></nav>
+</div></header>
+
+<main>
+<!-- ================= HOME ================= -->
+<div class="page on" id="home">
+<div class="hero"><div class="wrap">
+<div>
+<span class="tag">EST. SSC BATCH 2021</span>
+<h1>ঐক্যের বন্ধনে,<br>মানবতার সেবায়</h1>
+<p>এম.এ.এইচ.এস. এসএসসি ব্যাচ ২০২১ ফাউন্ডেশন — একটি সামাজিক, সেবামুখী, নিঃস্বার্থ ও অরাজনৈতিক সংগঠন। একদল স্বপ্নবাজ তরুণের বন্ধুত্বের হাত ধরে সমাজ পরিবর্তনের নিঃস্বার্থ প্রয়াস।</p>
+<a href="#register" class="btn btn-w" onclick="navTo('register')">সদস্য হোন</a><a href="#about" class="btn btn-o" onclick="navTo('about')">আরও জানুন</a>
+</div>
+<div class="logo-box"><img src="images/logo.jpg" alt="MAHS SSC Batch 2021 Foundation" onerror="this.style.display='none'"></div>
+</div></div>
+
+<div class="wrap stats"><div class="grid g4">
+<div class="stat"><b>৫+ বছর</b><span>সেবার পথচলা</span></div>
+<div class="stat"><b>৫০,০০০ ৳</b><span>সর্বোচ্চ ঈদ সামগ্রী বাজেট</span></div>
+<div class="stat"><b>৩+ দেশ</b><span>প্রবাসী বন্ধুদের অবদান</span></div>
+<div class="stat"><b>১০টি ধারা</b><span>স্বচ্ছ গঠনতন্ত্র</span></div>
+</div></div>
+
+<section class="s"><div class="wrap">
+<div class="sh"><span>Who We Are</span><h2>আমরা কারা</h2><p>মোচাগড়া আদর্শ উচ্চ বিদ্যালয়ের এসএসসি ২০২১ ব্যাচের বন্ধুদের হাত ধরে গড়ে ওঠা একটি মানবিক সংগঠন।</p></div>
+<div class="grid g3">
+<div class="card"><div class="ic">🤝</div><h3>স্বচ্ছতা ও একতা</h3><p>আমাদের কাজের মূল ভিত্তি স্বচ্ছতা, একতা ও খোলামেলা আলোচনা। প্রতিটি সিদ্ধান্তে সবার মতামত গুরুত্ব পায়।</p></div>
+<div class="card"><div class="ic">🌙</div><h3>ঈদ সামগ্রী বিতরণ</h3><p>প্রতি বছর ঈদুল ফিতরে অসহায় ও সুবিধাবঞ্চিত পরিবারের মাঝে ঈদ সামগ্রী পৌঁছে দিই।</p></div>
+<div class="card"><div class="ic">❤️</div><h3>নিঃস্বার্থ সেবা</h3><p>বিপদে পড়া বন্ধু বা এলাকার মানুষের পাশে আমরা নীরবে, তাৎক্ষণিকভাবে দাঁড়াই।</p></div>
+</div></div></section>
+
+<section class="s alt"><div class="wrap">
+<div class="sh"><span>What We Do</span><h2>আমাদের উদ্দেশ্য</h2></div>
+<div class="grid g3">
+<div class="card"><div class="ic">🎁</div><h3>ঈদ সামগ্রী বিতরণ</h3><p>ঈদের সময় গরিব ও অসহায় মানুষদের মধ্যে ঈদ সামগ্রী বিতরণ করা।</p></div>
+<div class="card"><div class="ic">🆘</div><h3>অসহায়দের পাশে</h3><p>দরিদ্র, অসহায় ও দুঃস্থ মানুষের সাহায্যে এগিয়ে আসা।</p></div>
+<div class="card"><div class="ic">📚</div><h3>শিক্ষা, স্বাস্থ্য ও দুর্যোগ</h3><p>শিক্ষা, স্বাস্থ্য ও দুর্যোগকালীন সাহায্যের মাধ্যমে সমাজের উন্নয়নে ভূমিকা রাখা।</p></div>
+<div class="card"><div class="ic">🕌</div><h3>নৈতিকতা ও আদর্শ</h3><p>ইসলামিক নৈতিকতা ও আদর্শ অনুসরণ করে সমাজের কল্যাণ সাধন করা।</p></div>
+<div class="card"><div class="ic">😊</div><h3>মুখে হাসি ফোটানো</h3><p>সুবিধাবঞ্চিত মানুষের মুখে হাসি ফোটানো ও জীবনযাত্রার মান উন্নয়নে সহায়তা করা।</p></div>
+<div class="card"><div class="ic">🌧️</div><h3>দুর্যোগকালীন সহায়তা</h3><p>বন্যা, শীত বা যেকোনো দুর্যোগে ত্রাণ নিয়ে মানুষের পাশে দাঁড়ানো।</p></div>
+</div></div></section>
+
+<section class="s alt"><div class="wrap">
+<div class="sh"><span>Gallery</span><h2>আমাদের মুহূর্তগুলো</h2></div>
+<div class="grid g3" id="galh"></div>
+<p style="text-align:center;margin-top:26px"><a href="#gallery" class="btn btn-b" onclick="navTo('gallery')">সব ছবি দেখুন</a></p>
+</div></section>
+
+<div class="quote"><h2>“ঐক্যের বন্ধনে, মানবতার সেবায়”</h2><p>IN THE BOND OF UNITY, IN THE SERVICE OF HUMANITY</p></div>
+
+<section class="s"><div class="wrap" style="text-align:center">
+<div class="sh"><span>Join Us</span><h2>আমাদের সাথে যুক্ত হোন</h2><p>মোচাগড়া আদর্শ উচ্চ বিদ্যালয়ের এসএসসি ২০২১ ব্যাচের সাবেক শিক্ষার্থীরা সদস্য হতে পারবেন।</p></div>
+<a href="#register" class="btn btn-b" onclick="navTo('register')">সদস্য ফরম পূরণ করুন</a> <a href="#donate" class="btn btn-g" onclick="navTo('donate')">অনুদান করুন</a>
+</div></section>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<div class="page" id="about">
+<div class="page-h"><h1>আমাদের সম্পর্কে</h1><p>এম.এ.এইচ.এস. এসএসসি ব্যাচ ২০২১ ফাউন্ডেশন: আমাদের পথচলার গল্প</p></div>
+<section class="s"><div class="wrap">
+<div class="two">
+<div>
+<h2>যেভাবে শুরু হয়েছিল</h2>
+<p style="margin-top:10px">আমাদের এই পথচলা নিছক কোনো আনুষ্ঠানিক সংগঠনের যাত্রা নয়, বরং একদল স্বপ্নবাজ তরুণের বন্ধুত্বের হাত ধরে সমাজ পরিবর্তনের এক নিঃস্বার্থ প্রয়াস। স্কুল জীবনের গণ্ডি পেরিয়ে যখন আমরা যে যার মতো ছড়িয়ে পড়েছিলাম, তখন থেকেই মনে একটা সুপ্ত বাসনা কাজ করেছিল—আমরা শুধু সাধারণ বন্ধু হয়ে থাকতে চাই না, সমাজের জন্যও কিছু করতে চাই।</p>
+<p style="margin-top:10px">শুরুর দিকে আমরা নিজেদের পকেটের টাকা, টিফিনের বা হাতখরচের টাকা বাঁচিয়ে ফান্ড তৈরি করতাম। কখনোই কাজের ঢাকঢোল পেটাইনি; নীরবে মানুষের মুখে হাসি ফোটাতেই আমাদের আনন্দ।</p>
+</div>
+<div class="card" style="text-align:center"><img src="images/logo.jpg" alt="Logo" style="max-height:300px" onerror="this.style.display='none'"></div>
+</div>
+</div></section>
+
+<section class="s alt"><div class="wrap">
+<div class="sh"><span>History</span><h2>প্রতিষ্ঠার ইতিহাস</h2></div>
+<div class="box">সংগঠনটি <b>২০২১ সালে</b> প্রতিষ্ঠিত হয়। সর্বপ্রথম <b>মোহাম্মদ সাইমন</b> এবং <b>মোহাম্মদ সোহান</b> একটি সংগঠনের কাজ দেখে উৎসাহিত হন এবং সিদ্ধান্ত নেন সহপাঠীদের নিয়ে একইভাবে কাজ করবেন। পরে তারা বন্ধু জিহাদ, শাহরিয়ার, ইউশা এবং মান্নানকে সাথে নিয়ে সংগঠনের নাম ও কার্যক্রম চূড়ান্ত করেন।</div>
+<h3 style="margin:26px 0 14px">প্রতিষ্ঠাতা পরিষদ</h3>
+<div class="grid g3" id="founders"></div>
+<div class="box" style="margin-top:26px"><b>প্রতিষ্ঠাতা পরিষদের দায়িত্ব:</b> সংগঠনের ভিত্তি স্থাপন ও দীর্ঘমেয়াদী পরিকল্পনা প্রণয়ন করা, মূলনীতি ও আদর্শ রক্ষা করা এবং কার্যনির্বাহী কমিটিকে সঠিক দিকনির্দেশনা ও পরামর্শ দেওয়া। পরিষদ সংগঠনের সর্বোচ্চ দায়িত্বপ্রাপ্ত সংস্থা হিসেবে মর্যাদা পাবে এবং সদস্যদের কাছে জবাবদিহি করবে।</div>
+</div></section>
+
+<section class="s"><div class="wrap">
+<div class="sh"><span>Our Philosophy</span><h2>আমাদের কাজের ধরন ও দর্শন</h2></div>
+<div class="grid g2">
+<div class="card"><h3>🗣️ সবার মতামত ও অংশগ্রহণ</h3><p>যেকোনো কাজের সিদ্ধান্তের আগে বন্ধুরা বসে বিস্তারিত আলোচনা করি। মতবিরোধ হয়, তবে ক্ষোভ মনে জমিয়ে রাখি না—যার যা বলার সামনাসামনি বলে দিই। মিটিং শেষে আবার একসাথে চা খাই।</p></div>
+<div class="card"><h3>💰 নিঃস্বার্থ ফান্ডিং ও প্রবাসীদের অবদান</h3><p>কোনো জোর-জবরদস্তি ছাড়াই মানুষ আমাদের স্বচ্ছতা ও সততা দেখে বিশ্বাস করে। সৌদি আরব, কাতার, আরব আমিরাতসহ বিভিন্ন দেশের প্রবাসী বন্ধুরা কষ্টের আয়ের একটি অংশ ফান্ডে পাঠান।</p></div>
+</div>
+<p style="margin-top:26px;text-align:center;color:var(--mu)">একটি চারাগাছ যেমন ধীরে ধীরে বড় হয়ে বিশাল ছায়া দেয়, আমাদের সংগঠনও আজ ততটাই পরিপক্ব। শিক্ষকদের দিকনির্দেশনা, মুরুব্বিদের দোয়া আর বন্ধুদের ভালোবাসাই আমাদের এ পর্যন্ত এনেছে।</p>
+</div></section>
+</div>
+
+<!-- ================= ACTIVITIES ================= -->
+<div class="page" id="activities">
+<div class="page-h"><h1>আমাদের কার্যক্রম</h1><p>শুরু থেকে এ পর্যন্ত উল্লেখযোগ্য কাজসমূহ</p></div>
+<section class="s"><div class="wrap">
+<div class="two" style="align-items:start">
+<div class="tl">
+<div><h3>জরুরি ও তাৎক্ষণিক সহায়তা</h3><p>বন্ধু বা এলাকার কেউ বিপদে পড়লে টিফিনের টাকা ও নিজেদের জমানো টাকা দিয়ে তাৎক্ষণিক পাশে দাঁড়িয়েছি।</p></div>
+<div><h3>ঈদ সামগ্রী বিতরণ কার্যক্রম</h3><p>প্রতি বছর ঈদুল ফিতরে অসহায় ও সুবিধাবঞ্চিত পরিবারের মাঝে ঈদ সামগ্রী বিতরণ। সর্বশেষ ঈদে বিগত ৪ বছরের সকল রেকর্ড ভেঙে প্রায় <b>৫০ হাজার টাকার</b> বাজেট বাস্তবায়ন করা হয়েছে।</p></div>
+<div><h3>ইফতার মাহফিল ও ৫ বছর পূর্তি</h3><p>শিক্ষকবৃন্দ, সমাজের মুরুব্বিয়ান ও বন্ধুদের অভিভাবকদের উপস্থিতিতে ইফতার মাহফিল ও প্রতিষ্ঠা বার্ষিকী উদযাপন।</p></div>
+<div><h3>সামাজিক ও মানবিক উদ্যোগ</h3><p>সমাজের যেকোনো সংকটে তরুণদের অগ্রণী ভূমিকা পালনের প্রত্যয়ে আমরা সবসময় কাজ করে যাচ্ছি।</p></div>
+<div><h3>শিক্ষা, স্বাস্থ্য ও দুর্যোগে সহায়তা</h3><p>গঠনতন্ত্র অনুযায়ী শিক্ষা, স্বাস্থ্য ও দুর্যোগকালীন সাহায্যের মাধ্যমে সমাজের পাশে থাকা আমাদের নিয়মিত লক্ষ্য।</p></div>
+</div>
+<div>
+<div class="card"><h3>🎁 প্রতিটি ঈদ প্যাকেটে যা থাকে</h3>
+<ul class="ul" style="margin-top:10px"><li>চাল</li><li>তেল ও চিনি</li><li>সেমাই</li><li>ডাল ও পেঁয়াজ</li><li>আস্ত পাকিস্তানি (সোনালী) মুরগি</li></ul>
+<p style="margin-top:10px">যাতে ঈদের দিন প্রতিটি পরিবার আনন্দে কাটাতে পারে।</p></div>
+<div class="card" style="margin-top:24px"><h3>👩‍👧 নারী ও শিশুদের জন্য</h3><p>নারী শিক্ষা, স্বাস্থ্যসেবা ও আত্মরক্ষার প্রশিক্ষণসহ নারী ও শিশুদের জন্য বিশেষ কর্মসূচি—নারী সদস্যদের নেতৃত্বে পরিচালিত হবে।</p></div>
+</div></div>
+</div></section>
+</div>
+
+<!-- ================= MEMBERS ================= -->
+<div class="page" id="members">
+<div class="page-h"><h1>সদস্য তালিকা</h1><p>এম.এ.এইচ.এস. এসএসসি ব্যাচ ২০২১ ফাউন্ডেশনের গর্বিত সদস্যবৃন্দ</p></div>
+<section class="s"><div class="wrap">
+
+<div class="gender-section">
+<h2 class="gender-title">ছেলে সদস্য</h2>
+<div class="member-table-container">
+<table class="member-table">
+  <thead>
+    <tr>
+      <th>সদস্য নং</th>
+      <th>নাম</th>
+      <th>মোবাইল নাম্বার</th>
+      <th>ঠিকানা</th>
+    </tr>
+  </thead>
+  <tbody id="male-members-tbody">
+    <!-- Male members will be populated here via JavaScript -->
+  </tbody>
+</table>
+</div>
+</div>
+
+<div class="gender-section">
+<h2 class="gender-title">মেয়ে সদস্য</h2>
+<div class="member-table-container">
+<table class="member-table">
+  <thead>
+    <tr>
+      <th>সদস্য নং</th>
+      <th>নাম</th>
+      <th>মোবাইল নাম্বার</th>
+      <th>ঠিকানা</th>
+    </tr>
+  </thead>
+  <tbody id="female-members-tbody">
+     <!-- Female members will be populated here via JavaScript -->
+  </tbody>
+</table>
+</div>
+</div>
+
+</div></section>
+</div>
+
+<!-- ================= COMMITTEE ================= -->
+<div class="page" id="committee">
+<div class="page-h"><h1>কার্যনির্বাহী কমিটি</h1><p>এম.এ.এইচ.এস. এসএসসি ব্যাচ ২০২১ ফাউন্ডেশন</p></div>
+<section class="s"><div class="wrap">
+<div class="sh"><span>Executive Committee</span><h2>আমাদের নেতৃত্ব</h2></div>
+<div class="grid g3" id="exec"></div>
+<div class="sh" style="margin-top:56px"><span>Advisors</span><h2>উপদেষ্টা পরিষদ</h2></div>
+<div class="grid g4" id="adv"></div>
+<div class="box" style="margin-top:40px"><b>গঠন ও উদ্দেশ্য:</b> কার্যনির্বাহী কমিটির সদস্যগণ কেউ যেন এই ধারণা পোষণ না করেন যে শুধু কমিটিতে থাকার কারণে তারা অন্যদের তুলনায় বিশেষ বা বড় কিছু। কমিটি গঠিত হয়েছে সংগঠনকে সুষ্ঠু ও সুন্দরভাবে পরিচালনার জন্য। কার্যনির্বাহী কমিটির সদস্য ও সাধারণ সদস্য সকলেই সমান মর্যাদার অধিকারী—আমাদের কারও অবস্থান বড় বা ছোট নয়।</div>
+</div></section>
+</div>
+
+<!-- ================= CONSTITUTION ================= -->
+<div class="page" id="constitution">
+<div class="page-h"><h1>গঠনতন্ত্র</h1><p>একটি সামাজিক, সেবামুখী, নিঃস্বার্থ ও অরাজনৈতিক সংগঠন</p></div>
+<section class="s"><div class="wrap" style="max-width:900px">
+<p style="text-align:center;margin-bottom:6px"><b>বিসমিল্লাহির রাহমানির রাহিম।</b></p>
+<div class="box">আল্লাহর নামে শুরু করছি, যিনি পরম করুণাময় ও অসীম দয়ালু। আমরা, এম.এ.এইচ.এস. এসএসসি ব্যাচ ২০২১ ফাউন্ডেশনের সদস্যবৃন্দ, মানবসেবা, সামাজিক উন্নয়ন এবং ইসলামিক নৈতিকতা ও আদর্শ অনুসরণ করে সমাজের কল্যাণে কাজ করার জন্য এই সংগঠন গঠন করছি। আমাদের মূল উদ্দেশ্য গরিব-দুঃখী মানুষের সাহায্য করা, ঈদ সামগ্রী বিতরণ এবং সমাজের কল্যাণমূলক কাজে অংশগ্রহণ করা। আমরা বিশ্বাস করি, ঐক্যবদ্ধ প্রচেষ্টার মাধ্যমে আমরা সমাজে ইতিবাচক পরিবর্তন আনতে পারব।</div>
+
+<details open><summary>ধারা ১: সংগঠনের নাম</summary><div class="dc"><p>এম.এ.এইচ.এস. এসএসসি ব্যাচ ২০২১ ফাউন্ডেশন</p></div></details>
+
+<details><summary>ধারা ২: সংগঠনের উদ্দেশ্য</summary><div class="dc"><ol>
+<li>ঈদের সময় গরিব ও অসহায় মানুষদের মধ্যে ঈদ সামগ্রী বিতরণ করা।</li>
+<li>দরিদ্র, অসহায় এবং দুঃস্থ মানুষের সাহায্যে এগিয়ে আসা।</li>
+<li>শিক্ষা, স্বাস্থ্য ও দুর্যোগকালীন সাহায্য প্রদানের মাধ্যমে সমাজের উন্নয়নে ভূমিকা রাখা।</li>
+<li>ইসলামিক নৈতিকতা ও আদর্শ অনুসরণ করে সমাজের কল্যাণ সাধন করা।</li>
+<li>সমাজের সুবিধাবঞ্চিত মানুষের মুখে হাসি ফোটানো এবং তাদের জীবনযাত্রার মান উন্নয়নে সহায়তা করা।</li></ol></div></details>
+
+<details><summary>ধারা ৩: প্রতিষ্ঠাতা পরিষদ</summary><div class="dc">
+<h4>প্রতিষ্ঠার ইতিহাস</h4><p>এই সংগঠনটি ২০২১ সালে প্রতিষ্ঠিত হয়। সর্বপ্রথম মোহাম্মদ সাইমন এবং মোহাম্মদ সোহান একটি সংগঠনের কাজ দেখে উৎসাহিত হন এবং সহপাঠীদের নিয়ে একইভাবে কাজ করার সিদ্ধান্ত নেন। পরে তারা বন্ধু জিহাদ, শাহরিয়ার, ইউশা এবং মান্নানকে সাথে নিয়ে সংগঠনের নাম ও কার্যক্রম চূড়ান্ত করেন।</p>
+<h4>প্রতিষ্ঠাতা পরিষদের সদস্য</h4><ol><li>মোহাম্মদ সাইমন</li><li>মোহাম্মদ সোহান</li><li>জিহাদ</li><li>শাহরিয়ার</li><li>ইউশা</li><li>আব্দুল মান্নান</li></ol>
+<h4>দায়িত্ব</h4><p>সংগঠনের ভিত্তি স্থাপন এবং দীর্ঘমেয়াদী পরিকল্পনা প্রণয়ন করা; মূলনীতি ও আদর্শ সঠিকভাবে রক্ষা করা এবং তা বাস্তবায়নে গুরুত্বপূর্ণ পদক্ষেপ গ্রহণ করা। প্রতিষ্ঠাতা পরিষদ কার্যনির্বাহী কমিটিকে সঠিক দিকনির্দেশনা ও পরামর্শ প্রদান করবে।</p>
+<p style="margin-top:8px">প্রতিষ্ঠাতা পরিষদকে সংগঠনের সর্বোচ্চ দায়িত্বপ্রাপ্ত সংস্থা হিসেবে মর্যাদা প্রদান করা হবে, যার সিদ্ধান্তসমূহ সংগঠনের সার্বিক উন্নয়ন ও অগ্রগতির জন্য অপরিহার্য এবং কার্যনির্বাহী কমিটির জন্য পালনীয়। পরিষদের সদস্যরা আদর্শ ও নৈতিক দিকনির্দেশনা নির্ধারণে সর্বাধিক ক্ষমতাসম্পন্ন থাকবেন, তবে সংগঠনের সকল সদস্যের কাছে জবাবদিহি করতে হবে। কোনো সদস্যের বিরুদ্ধে দুর্নীতি বা অন্য কোনো ভুল পাওয়া গেলে সদস্যদের দ্বারা গৃহীত সিদ্ধান্ত প্রতিষ্ঠাতা পরিষদের ওপর বাস্তবায়িত হবে।</p></div></details>
+
+<details><summary>ধারা ৪: কার্যনির্বাহী পরিষদ</summary><div class="dc">
+<h4>১. গঠন ও উদ্দেশ্য</h4><p>এই কমিটি সংগঠনকে সুষ্ঠু ও সুন্দরভাবে পরিচালনার উদ্দেশ্যে গঠিত। কার্যনির্বাহী কমিটির সদস্য এবং সাধারণ সদস্য সকলেই সমান মর্যাদার অধিকারী। সকলের সম্মিলিত প্রচেষ্টা, মতামত ও পরামর্শের ভিত্তিতে সংগঠনের লক্ষ্য পূরণ করা হবে; প্রতিটি সিদ্ধান্তে সকল সদস্যের মতামত গুরুত্বের সঙ্গে বিবেচনা করে কার্যনির্বাহী পরিষদ চূড়ান্ত সিদ্ধান্ত নেবে। একে অপরের প্রতি সম্মান, সহযোগিতা ও ভ্রাতৃত্ববোধ নিয়ে কাজ করতে হবে এবং প্রতিটি পদক্ষেপে সদস্যদের আস্থা ও সমর্থন নিশ্চিত করতে হবে।</p>
+<h4>২. গঠন (সদস্য সংখ্যা)</h4><p>কার্যনির্বাহী পরিষদে সাধারণত ১০-১২ জন সদস্য থাকবেন। সময়ের প্রেক্ষাপট ও সংগঠনের প্রয়োজন অনুযায়ী সদস্য সংখ্যা বৃদ্ধি করা যেতে পারে।</p>
+<h4>৩. দায়িত্ব</h4><p>সংগঠনের দৈনন্দিন কার্যক্রম পরিচালনা করা; বার্ষিক সাধারণ সভায় প্রতিবেদন উপস্থাপন করা; প্রতিষ্ঠাতা পরিষদ ও সদস্যদের সাথে সমন্বয় করে সকল কার্যক্রম বাস্তবায়ন করা।</p>
+<h4>৪. সদস্যপদ</h4><p>কার্যনির্বাহী পরিষদের সদস্যপদ সময় ও সংগঠনের প্রয়োজন বুঝে পরিবর্তন হবে এবং নির্বাচনের মাধ্যমে নতুন সদস্য নির্বাচিত হবেন।</p>
+<h4>৫. সম্মিলিত প্রচেষ্টা</h4><p>পরিচালনা পরিষদ, কার্যনির্বাহী কমিটির সদস্য এবং সাধারণ সদস্য সবাই মিলে লক্ষ্য পূরণের জন্য কাজ করবেন। আমাদের মধ্যে কেউ বড় বা ছোট নয়, সবাই সমান।</p></div></details>
+
+<details><summary>ধারা ৫: সদস্যপদ</summary><div class="dc">
+<h4>১. যোগ্যতা</h4><p>শুধুমাত্র মোচাগড়া আদর্শ উচ্চ বিদ্যালয় থেকে এসএসসি ব্যাচ ২০২১-এ পাস করা শিক্ষার্থীরা এই সংগঠনের সদস্য হতে পারবেন।</p>
+<h4>২. অঙ্গীকারনামা</h4><p>প্রত্যেক সদস্যকে গঠনতন্ত্র, উদ্দেশ্য ও নিয়মাবলী মেনে চলার অঙ্গীকার করতে হবে। দায়বদ্ধতা ও দায়িত্ব পালনের জন্য একটি অঙ্গীকারনামা পূরণ করা আবশ্যক।</p>
+<h4>৩. সদস্যপদ বাতিল</h4><p>কোনো সদস্য গঠনতন্ত্র, নিয়মাবলি ও উদ্দেশ্য লঙ্ঘন করলে কার্যনির্বাহী কমিটি তার সদস্যপদ বাতিল করতে পারবে।</p></div></details>
+
+<details><summary>ধারা ৬: সভা</summary><div class="dc">
+<h4>১. বার্ষিক সাধারণ সভা</h4><p>প্রতি বছর একটি বিশেষ সাধারণ সভা অনুষ্ঠিত হবে, যেখানে সদস্য, পরিচালনা পরিষদ, কার্যনির্বাহী কমিটি ও প্রতিষ্ঠাতা পরিষদের সদস্যরা একত্রিত হবেন। সভায় বিগত বছরের অগ্রগতি, অর্জন ও কার্যক্রমের ওপর আলোচনা, ভবিষ্যৎ পরিকল্পনা প্রণয়ন, নতুন লক্ষ্য স্থাপন, আর্থিক প্রতিবেদন পর্যালোচনা, বিভিন্ন কার্যক্রমের ফলাফল মূল্যায়ন, সদস্যদের মতামত গ্রহণ এবং পরবর্তী বছরের জন্য নতুন কার্যক্রম অনুমোদন ও বাজেট প্রণয়ন করা হবে।</p>
+<h4>২. জরুরি সভা</h4><p>প্রয়োজনে সংগঠনের সদস্য ও যেকোনো পরিষদের সিদ্ধান্তে জরুরি সভা ডাকা যাবে। অনলাইন বা অফলাইনে সেই সভা বাস্তবায়ন করা হবে।</p></div></details>
+
+<details><summary>ধারা ৭: আর্থিক ব্যবস্থাপনা</summary><div class="dc">
+<h4>আয়ের উৎস</h4><p>সদস্যদের অর্থ, বার্ষিক চাঁদা, দান এবং অন্যান্য বৈধ উৎস থেকে প্রাপ্ত অর্থ। কোনো সদস্য বা ব্যক্তি স্বতঃস্ফূর্তভাবে আর্থিক সহযোগিতা বা দান করতে চাইলে তিনি তা স্বাধীনভাবে করতে পারবেন।</p>
+<h4>আর্থিক স্বচ্ছতা</h4><p>কোষাধ্যক্ষ আর্থিক লেনদেনের রেকর্ড রাখবেন এবং বার্ষিক সভায় প্রতিবেদন উপস্থাপন করবেন।</p>
+<h4>অর্থের সদ্ব্যবহার</h4><p>সংগঠনের সমস্ত আর্থিক সম্পদ মানবসেবা, সামাজিক উন্নয়ন ও কল্যাণমূলক কর্মকাণ্ডে ব্যয় করা হবে। সংগঠন কোনো প্রকার ব্যক্তিগত বা ব্যবসায়িক লাভের উদ্দেশ্যে এ অর্থ ব্যবহার করবে না।</p></div></details>
+
+<details><summary>ধারা ৮: নারী সদস্যদের সম্মান ও নেতৃত্ব বিকাশ</summary><div class="dc"><ol>
+<li><b>নারী সদস্যদের অধিকার:</b> ফাউন্ডেশনের কার্যক্রমে নারী সদস্যদের সম্পূর্ণ অংশগ্রহণ নিশ্চিত করা হবে; তারা পুরুষ সদস্যদের মতোই সমস্ত কার্যক্রমে সমানভাবে অংশগ্রহণ করতে পারবেন।</li>
+<li><b>নারী কল্যাণ ও উন্নয়নমূলক প্রকল্প:</b> নারী শিক্ষা, স্বাস্থ্যসেবা ও আত্মরক্ষার প্রশিক্ষণসহ বিশেষ প্রকল্প হাতে নেওয়া হবে।</li>
+<li><b>নারী ও শিশুদের বিশেষ সহায়তা কার্যক্রম:</b> নারী সদস্যদের নেতৃত্বে পরিচালিত হবে যাতে তাদের অবদান স্বীকৃত হয়।</li>
+<li><b>সম্মান ও নিরাপত্তা:</b> প্রতিটি সদস্য নারীদের প্রতি সর্বোচ্চ সম্মান প্রদর্শন করবে এবং নিরাপদ, সুরক্ষিত ও সম্মানজনক পরিবেশ নিশ্চিত করতে প্রতিশ্রুতিবদ্ধ থাকবে।</li></ol></div></details>
+
+<details><summary>ধারা ৯: বিদেশে অবস্থানরত সদস্যদের জন্য বিশেষ ব্যবস্থা</summary><div class="dc"><ol>
+<li><b>ভূমিকা:</b> বিদেশে অবস্থানরত সদস্যরা সংগঠনের উন্নয়ন ও মানবসেবামূলক কাজে আর্থিক ও নৈতিকভাবে সহায়তা করতে পারবেন।</li>
+<li><b>অবদানের স্বীকৃতি:</b> তাদের আর্থিক অবদান বার্ষিক প্রতিবেদনে বিশেষ গুরুত্বসহকারে উল্লেখ করা হবে এবং নাম সম্মাননার সাথে সংগঠনের ওয়েবসাইট ও বার্ষিক ম্যাগাজিনে প্রকাশ করা হবে।</li>
+<li><b>যোগাযোগ ও অংশগ্রহণ:</b> ফেসবুক ও হোয়াটসঅ্যাপ গ্রুপের মতো অনলাইন প্ল্যাটফর্ম তৈরি করা হবে এবং ভিডিও কনফারেন্সের মাধ্যমে অংশগ্রহণের সুযোগ দেওয়া হবে।</li>
+<li><b>বিশেষ কমিটি:</b> বিদেশি সদস্যদের জন্য একটি বিশেষ কমিটি গঠিত হবে, যারা নিয়মিত যোগাযোগ রাখবেন এবং নির্বাহী পরিষদের সাথে সমন্বয় করে কাজ করবেন।</li>
+<li><b>অর্থের ব্যবহার:</b> অর্থ মানবসেবা ও সামাজিক উন্নয়নমূলক কাজে ব্যবহৃত হবে এবং প্রতি বছর তাদের কাছে আর্থিক প্রতিবেদন পাঠানো হবে।</li></ol></div></details>
+
+<details><summary>ধারা ১০: সংশোধন</summary><div class="dc"><p>গঠনতন্ত্রের কোনো ধারা সংশোধন করতে বার্ষিক সাধারণ সভায় উপস্থিত সদস্যদের <b>দুই-তৃতীয়াংশের</b> সম্মতি আবশ্যক। সংশোধনের প্রস্তাব আগে থেকে সদস্যদের অবগত করতে হবে এবং তাদের সমর্থন পেলে সংশ্লিষ্ট ধারা পরিবর্তন বা পরিমার্জন করা হবে। সংগঠনের উদ্দেশ্য ও মূলনীতির সঙ্গে সামঞ্জস্য রেখে যেকোনো সংশোধনী প্রণয়ন করা হবে।</p></div></details>
+</div></section>
+</div>
+
+<!-- ================= REGISTER ================= -->
+<div class="page" id="register">
+<div class="page-h"><h1>সদস্য ফরম</h1><p>মোচাগড়া আদর্শ উচ্চ বিদ্যালয়ের এসএসসি ২০২১ ব্যাচের শিক্ষার্থীদের জন্য</p></div>
+<section class="s"><div class="wrap" style="max-width:900px">
+<form class="form" id="rf" onsubmit="return false">
+<div class="fg">
+<div class="full"><label>ছবি (পাসপোর্ট সাইজ)</label><input type="file" id="ph" accept="image/*"><img id="pv" alt="ছবি"></div>
+<div class="full"><label>নাম *</label><input id="f_name" required></div>
+<div><label>পিতা / স্বামী *</label><input id="f_father" required></div>
+<div><label>মাতা *</label><input id="f_mother" required></div>
+<div><label>জন্ম তারিখ *</label><input type="date" id="f_dob" required></div>
+<div><label>ধর্ম</label><input id="f_rel"></div>
+<div><label>পেশা</label><input id="f_job"></div>
+<div><label>রক্তের গ্রুপ</label><select id="f_blood"><option value="">নির্বাচন করুন</option><option>A+</option><option>A-</option><option>B+</option><option>B-</option><option>AB+</option><option>AB-</option><option>O+</option><option>O-</option></select></div>
+<div class="full"><label>স্থায়ী ঠিকানা *</label><textarea id="f_perm" rows="2" required></textarea></div>
+<div class="full"><label>বর্তমান ঠিকানা *</label><textarea id="f_pres" rows="2" required></textarea></div>
+<div><label>জাতীয় পরিচয়পত্র / জন্মনিবন্ধন নং</label><input id="f_nid"></div>
+<div><label>মোবাইল *</label><input type="tel" id="f_mob" required></div>
+</div>
+<div class="oath"><b>অঙ্গীকার নামা</b><p style="margin-top:6px">আমি, মোচাগড়া আদর্শ উচ্চ বিদ্যালয়ের এসএসসি ব্যাচ ২০২১ এর একজন সাবেক শিক্ষার্থী হিসেবে, এম.এ.এইচ.এস. এসএসসি ব্যাচ ২০২১ ফাউন্ডেশন এর সদস্য পদ গ্রহণ করছি। আমি এই অঙ্গীকার নামার মাধ্যমে আমার দায়িত্ব ও কর্তব্যের বিষয়ে সচেতন হয়ে নিম্নলিখিত অঙ্গীকার করছি:</p>
+<ol><li>আমি সংগঠনের উদ্দেশ্য, নিয়মাবলি এবং ইসলামী মূল্যবোধের প্রতি পূর্ণ শ্রদ্ধাশীল থাকব এবং তা মেনে চলব।</li>
+<li>আমি সবসময় সংগঠনের নিয়ম-কানুন মেনে চলব এবং সকল সদস্যের সাথে ঐক্য, সহমর্মিতা ও সহযোগিতার মনোভাব বজায় রাখব।</li>
+<li>আমি সংগঠনের অভ্যন্তরীণ শৃঙ্খলা ও ঐক্য বজায় রাখব এবং কোনো প্রকার বিভেদ বা বিশৃঙ্খলা সৃষ্টি করব না।</li>
+<li>আমি মানবতার সেবায় নিজেকে নিয়োজিত রাখব এবং রমাদানের ঈদ সামগ্রী বিতরণসহ সকল সেবামূলক কর্মকাণ্ডে সক্রিয়ভাবে অংশগ্রহণ করব।</li>
+<li>আমি ইসলামিক নৈতিকতা অনুসরণ করে সংগঠনের সকল কার্যক্রম পরিচালনা করব এবং সমাজের উন্নয়ন ও কল্যাণে অবদান রাখব।</li>
+<li>আমি সংগঠনের সুনাম ও মর্যাদা রক্ষা করব এবং কোনো প্রকার এমন কাজ থেকে বিরত থাকব যা সংগঠনের ভাবমূর্তি ক্ষুণ্ন করতে পারে।</li></ol></div>
+<div class="fg"><div><label>তারিখ</label><input type="date" id="f_date"></div><div><label>সদস্যের স্বাক্ষর (নাম টাইপ করুন)</label><input id="f_sign"></div></div>
+<label style="margin:16px 0;font-weight:500"><input type="checkbox" id="f_ok" style="width:auto;margin-right:8px">আমি উপরের অঙ্গীকারনামা পড়েছি এবং মেনে চলতে সম্মত।</label>
+<div class="no-print" style="display:flex;gap:12px;flex-wrap:wrap">
+<button class="btn btn-b" onclick="sendForm('mail')">📧 ইমেইলে পাঠান</button>
+<button class="btn btn-g" onclick="sendForm('wa')">💬 হোয়াটসঅ্যাপে পাঠান</button>
+<button class="btn" style="background:var(--bl);color:var(--b)" onclick="window.print()">🖨️ প্রিন্ট / PDF</button></div>
+<p class="note" style="margin-top:14px">ফরম জমা দেওয়ার পর সভাপতি ও সাধারণ সম্পাদকের স্বাক্ষরসহ সদস্যপদ নিশ্চিত করা হবে। শুধুমাত্র মোচাগড়া আদর্শ উচ্চ বিদ্যালয়ের এসএসসি ২০২১ ব্যাচের শিক্ষার্থীরা আবেদন করতে পারবেন।</p>
+<div style="display:flex;justify-content:space-between;margin-top:44px"><span style="border-top:1px solid #000;padding-top:4px">সভাপতি</span><span style="border-top:1px solid #000;padding-top:4px">সাধারণ সম্পাদক</span></div>
+</form>
+</div></section>
+</div>
+
+<!-- ================= GALLERY ================= -->
+<div class="page" id="gallery">
+<div class="page-h"><h1>ফটো গ্যালারি</h1><p>আমাদের পথচলার কিছু স্মরণীয় মুহূর্ত</p></div>
+<section class="s"><div class="wrap"><div class="grid g3" id="gal"></div></div></section>
+</div>
+
+<!-- ================= DONATE ================= -->
+<div class="page" id="donate">
+<div class="page-h"><h1>অনুদান করুন</h1><p>আপনার সামান্য দান একটি পরিবারের মুখে হাসি ফোটাতে পারে</p></div>
+<section class="s"><div class="wrap" style="max-width:950px">
+<div class="box">এম.এ.এইচ.এস. এসএসসি ব্যাচ ২০২১ ফাউন্ডেশনের আয়ের উৎস সদস্যদের অর্থ, বার্ষিক চাঁদা ও স্বতঃস্ফূর্ত দান। আপনার দেওয়া প্রতিটি টাকা শুধুমাত্র মানবসেবা, সামাজিক উন্নয়ন ও কল্যাণমূলক কাজে ব্যয় করা হবে; কোনো ব্যক্তিগত বা ব্যবসায়িক লাভে নয়।</div>
+<div class="grid g3" style="margin-top:26px">
+<div class="card pay" style="border-top:5px solid #e2136e">
+    <img src="images/bkash_logo.png" alt="bKash" class="pay-logo" onerror="this.src='https://raw.githubusercontent.com/Shahonbd/logo/main/bkash.png'">
+    <h3>বিকাশ (bKash)</h3><p class="num">01302-985478</p><button class="btn btn-b" onclick="cp('01302985478',this)">নম্বর কপি করুন</button>
+</div>
+<div class="card pay" style="border-top:5px solid #e2136e">
+    <img src="images/bkash_logo.png" alt="bKash" class="pay-logo" onerror="this.src='https://raw.githubusercontent.com/Shahonbd/logo/main/bkash.png'">
+    <h3>বিকাশ (bKash)</h3><p class="num">01813-147570</p><button class="btn btn-b" onclick="cp('01813147570',this)">নম্বর কপি করুন</button>
+</div>
+<div class="card pay" style="border-top:5px solid #f6921e">
+    <img src="images/nagad_logo.png" alt="Nagad" class="pay-logo" onerror="this.src='https://raw.githubusercontent.com/Shahonbd/logo/main/nagad.png'">
+    <h3>নগদ (Nagad)</h3><p class="num">01813-147570</p><button class="btn btn-b" onclick="cp('01813147570',this)">নম্বর কপি করুন</button>
+</div>
+</div>
+<div class="grid g2" style="margin-top:26px">
+<div class="card"><h3>কীভাবে অনুদান দেবেন</h3><ol style="padding-left:20px;margin-top:8px;color:var(--mu)"><li>বিকাশ বা নগদ অ্যাপে “Send Money” দিন।</li><li>উপরের যেকোনো একটি নম্বরে টাকা পাঠান।</li><li>রেফারেন্সে আপনার নাম লিখুন।</li><li>পাঠানোর পর ট্রানজ্যাকশন আইডিসহ আমাদের হোয়াটসঅ্যাপে জানান।</li></ol>
+<p style="margin-top:12px"><a class="btn btn-g" href="https://wa.me/8801302985478" target="_blank" rel="noopener">💬 হোয়াটসঅ্যাপে জানান</a></p></div>
+<div class="card"><h3>স্বচ্ছতা ও জবাবদিহি</h3><p>কোষাধ্যক্ষ সকল লেনদেনের রেকর্ড রাখেন এবং বার্ষিক সাধারণ সভায় আর্থিক প্রতিবেদন উপস্থাপন করেন। প্রবাসী সদস্যদের অবদান বার্ষিক প্রতিবেদনে বিশেষ গুরুত্বসহ উল্লেখ করা হয় এবং প্রতি বছর তাদের কাছে আর্থিক প্রতিবেদন পাঠানো হয়।</p></div>
+</div>
+<p class="note" style="margin-top:20px;text-align:center">⚠️ অনুগ্রহ করে শুধুমাত্র এই পাতায় উল্লেখিত নম্বরে অনুদান পাঠান। সন্দেহ হলে আগে আমাদের ফোনে যোগাযোগ করুন: +880 1302-985478</p>
+</div></section>
+</div>
+
+<!-- ================= CONTACT ================= -->
+<div class="page" id="contact">
+<div class="page-h"><h1>যোগাযোগ</h1><p>আমাদের সাথে যুক্ত হোন, পাশে থাকুন</p></div>
+<section class="s"><div class="wrap"><div class="two" style="align-items:start">
+<div>
+<h2 style="margin-bottom:20px">আমাদের ঠিকানা</h2>
+<div class="ci"><i>📍</i><div><b>ঠিকানা</b><br>মোচাগড়া, মুরাদনগর, কুমিল্লা, বাংলাদেশ।</div></div>
+<div class="ci"><i>📞</i><div><b>ফোন</b><br><a href="tel:+8801302985478">+880 1302-985478</a><br><a href="tel:+8801813147570">+880 1813-147570</a></div></div>
+<div class="ci"><i>✉️</i><div><b>ইমেইল</b><br><a href="mailto:mashsscbatchfdn2021@gmail.com">mashsscbatchfdn2021@gmail.com</a></div></div>
+<div class="soc">
+<a class="fb" href="https://www.facebook.com/mahssscbatch2021foundation" target="_blank" rel="noopener">Facebook</a>
+<a class="wa" href="https://wa.me/8801302985478" target="_blank" rel="noopener">WhatsApp</a></div>
+</div>
+<div class="card">
+<h3>📨 আমাদের বার্তা পাঠান</h3>
+<div class="fg" style="margin-top:14px">
+<div><label>আপনার নাম</label><input id="c_name"></div>
+<div><label>মোবাইল / ইমেইল</label><input id="c_con"></div>
+<div class="full"><label>বার্তা</label><textarea id="c_msg" rows="5"></textarea></div>
+</div>
+<button class="btn btn-b" style="margin-top:16px" onclick="sendMsg()">বার্তা পাঠান</button>
+<p class="note" style="margin-top:10px">বোতামে ক্লিক করলে আপনার ইমেইল অ্যাপ খুলবে।</p>
+</div></div>
+
+<!-- Google Map Section -->
+<div class="card" style="margin-top:34px;">
+    <h3>🗺️ Google Maps এ আমরা</h3>
+    <div style="margin-top:15px; border-radius: 10px; overflow: hidden; height: 300px;">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14631.791559858348!2d90.89885834999999!3d23.642598349999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37546377755c3cc9%3A0x6b14f488fbf0fc7d!2sMochagora%20Adarsha%20High%20School!5e0!3m2!1sen!2sbd!4v1716301385419!5m2!1sen!2sbd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</div>
+
+<div class="card" style="margin-top:34px;text-align:center"><h3>🤲 আমাদের কাজে সহযোগিতা করুন</h3><p>যেকোনো ব্যক্তি স্বতঃস্ফূর্তভাবে সংগঠনকে আর্থিক সহযোগিতা বা দান করতে পারেন। সকল আর্থিক হিসাব বার্ষিক সভায় স্বচ্ছভাবে উপস্থাপন করা হয়।</p><p style="margin-top:12px"><a href="#donate" class="btn btn-g" onclick="navTo('donate')">অনুদানের নম্বর দেখুন</a></p></div>
+</div></section>
+</div>
+
+<!-- ================= PRIVACY ================= -->
+<div class="page" id="privacy">
+<div class="page-h"><h1>গোপনীয়তা নীতি (Privacy Policy)</h1><p>সর্বশেষ হালনাগাদ: অক্টোবর ২০২৬</p></div>
+<section class="s"><div class="wrap prose" style="max-width:850px">
+<p>এম.এ.এইচ.এস. এসএসসি ব্যাচ ২০২১ ফাউন্ডেশন আপনার ব্যক্তিগত তথ্যের গোপনীয়তাকে সর্বোচ্চ গুরুত্ব দেয়। এই নীতিতে ব্যাখ্যা করা হয়েছে আমরা কী তথ্য সংগ্রহ করি এবং কীভাবে ব্যবহার করি।</p>
+<h3>১. আমরা যে তথ্য সংগ্রহ করি</h3><ul><li>সদস্য ফরমে প্রদত্ত তথ্য: নাম, পিতা/মাতার নাম, জন্ম তারিখ, ঠিকানা, পরিচয়পত্র নং, মোবাইল নম্বর, রক্তের গ্রুপ ও ছবি।</li><li>যোগাযোগ ফরমে দেওয়া নাম, ফোন/ইমেইল ও বার্তা।</li></ul>
+<h3>২. তথ্যের ব্যবহার</h3><ul><li>সদস্যপদ যাচাই ও সংগঠনের রেকর্ড সংরক্ষণ।</li><li>সংগঠনের কার্যক্রম, সভা ও জরুরি প্রয়োজনে (যেমন রক্তদান) যোগাযোগ।</li><li>আপনার বার্তার উত্তর প্রদান।</li></ul>
+<h3>৩. তথ্য শেয়ারিং</h3><p>আপনার ব্যক্তিগত তথ্য কোনো তৃতীয় পক্ষের কাছে বিক্রি বা ভাড়া দেওয়া হয় না। আইনগত প্রয়োজন ছাড়া আপনার সম্মতি ব্যতীত তথ্য প্রকাশ করা হবে না। প্রবাসী সদস্যদের অবদানের স্বীকৃতি হিসেবে তাদের সম্মতিক্রমে নাম প্রকাশ করা হতে পারে।</p>
+<h3>৪. তথ্যের নিরাপত্তা</h3><p>সদস্যদের তথ্য শুধুমাত্র কার্যনির্বাহী কমিটির দায়িত্বপ্রাপ্ত সদস্যরা সংরক্ষণ ও ব্যবহার করবেন। এই ওয়েবসাইটের ফরম আপনার ইমেইল/হোয়াটসঅ্যাপ অ্যাপের মাধ্যমে তথ্য পাঠায়; ওয়েবসাইট নিজে কোনো তথ্য সার্ভারে জমা রাখে না।</p>
+<h3>৫. তৃতীয় পক্ষের সেবা</h3><p>এই ওয়েবসাইটে Google Fonts এবং Facebook, WhatsApp, Instagram-এর লিংক রয়েছে। সেসব সেবার নিজস্ব গোপনীয়তা নীতি প্রযোজ্য।</p>
+<h3>৬. আপনার অধিকার</h3><p>আপনি যেকোনো সময় আপনার তথ্য দেখা, সংশোধন বা মুছে ফেলার অনুরোধ করতে পারেন। এ জন্য আমাদের সাথে যোগাযোগ করুন।</p>
+<h3>৭. নীতির পরিবর্তন</h3><p>প্রয়োজনে এই নীতি হালনাগাদ করা হতে পারে। পরিবর্তন এই পাতায় প্রকাশিত হবে।</p>
+<p style="margin-top:20px"><b>যোগাযোগ:</b> mashsscbatchfdn2021@gmail.com | +880 1302-985478</p>
+</div></section>
+</div>
+</main>
+
+<footer><div class="wrap">
+<div class="grid">
+<div><div class="logo"><img src="images/logo.jpg" alt="Logo" onerror="this.style.display='none'"></div>
+<h4>এম.এ.এইচ.এস. এসএসসি ব্যাচ ২০২১ ফাউন্ডেশন</h4>
+<p>একটি সামাজিক, সেবামুখী, নিঃস্বার্থ ও অরাজনৈতিক সংগঠন।<br><i>“ঐক্যের বন্ধনে, মানবতার সেবায়”</i></p></div>
+<div><h4>দ্রুত লিংক</h4><a href="#home" onclick="navTo('home')">হোম</a><a href="#about" onclick="navTo('about')">আমাদের সম্পর্কে</a><a href="#activities" onclick="navTo('activities')">কার্যক্রম</a><a href="#committee" onclick="navTo('committee')">কমিটি</a><a href="#members" onclick="navTo('members')">সদস্যবৃন্দ</a><a href="#gallery" onclick="navTo('gallery')">গ্যালারি</a><a href="#donate" onclick="navTo('donate')">অনুদান</a><a href="#register" onclick="navTo('register')">সদস্য ফরম</a></div>
+<div><h4>যোগাযোগ</h4><p>📍 মোচাগড়া, মুরাদনগর, কুমিল্লা<br>📞 +880 1302-985478<br>📞 +880 1813-147570<br>✉️ mashsscbatchfdn2021@gmail.com</p>
+<a href="https://www.facebook.com/mahssscbatch2021foundation" target="_blank" rel="noopener">👍 Facebook পেজ</a></div>
+</div>
+<div class="copy">© <span id="yr">2026</span> MAHS SSC Batch 2021 Foundation. সর্বস্বত্ব সংরক্ষিত।</div>
+</div></footer>
+
+<div id="lbx" onclick="this.style.display='none'"><img id="lbi" alt=""></div>
+<a class="wafab no-print" href="https://wa.me/8801302985478" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<script>
+// ---- Data ----
+const founders=["মোহাম্মদ সাইমন","মোহাম্মদ সোহান","জিহাদ","শাহরিয়ার","ইউশা","আব্দুল মান্নান"];
+const exec=[
+["সভাপতি","মো: শাহরিয়ার নাফিজ",1],["সহ-সভাপতি","মোহাম্মদ আসিফ"],["সাধারণ সম্পাদক","মোহাম্মদ সোহান"],
+["কোষাধ্যক্ষ","মির্জা জিহাদ"],["সাংগঠনিক সম্পাদক","মোহাম্মদ ফারদিন"],["কার্যনির্বাহী সদস্য","আবু-বক্কর"],
+["কার্যনির্বাহী সদস্য","আল মামুন"],["কার্যনির্বাহী সদস্য","আব্দুল কাইয়ুম"]];
+const adv=["মোহাম্মদ সাইমন","আরফিন ভূঁইয়া","ইউশা আলম","গোলাম কিবরিয়া"];
+const P=(n,r,c)=>`<div class="card person ${c||''}"><div class="av">${n.replace('মো: ','').charAt(0)}</div><h3>${n}</h3><span class="role">${r}</span></div>`;
+document.getElementById('founders').innerHTML=founders.map((n,i)=>P(n,'প্রতিষ্ঠাতা সদস্য')).join('');
+document.getElementById('exec').innerHTML=exec.map(e=>P(e[1],e[0],e[2]?'lead':'')).join('');
+document.getElementById('adv').innerHTML=adv.map(n=>P(n,'উপদেষ্টা')).join('');
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+// --- Member Data ---
+const maleMembers = [
+    { no: "০১", name: "মো: শাহরিয়ার নাফিজ", phone: "০১৩০২-৯৮৫৪ ৭৮", address: "" },
+    { no: "০২", name: "মো: আসিবুল ইসলাম", phone: "০১৯৬০-৩৮৮৪৬৪", address: "" },
+    { no: "০৩", name: "মো: জিহাদ", phone: "০১৮৭৯-৪৯১৬৬৬", address: "" },
+    { no: "০৪", name: "মো: ইউশা", phone: "০১৭৯৬-৬৭৬২৭০", address: "" },
+    { no: "০৫", name: "মো: সাইমন", phone: "০১৭০৭-৮৬৬৮২৩", address: "" },
+    { no: "০৬", name: "মো: আব্দুল্লাহ", phone: "০১৮১৪-২৬৯৮৮০", address: "" },
+    { no: "০৭", name: "মো: আবু-বক্কর", phone: "০১৭৪৪-৬৫২১৭৯", address: "" },
+    { no: "০৮", name: "মোহাম্মদ সোহান", phone: "০১৮১৩-১৪৭৫৭০", address: "" },
+    { no: "০৯", name: "মো: আলাউদ্দিন", phone: "০১৮৭৫-৩৪৭৬২৩", address: "" },
+    { no: "১০", name: "মো: অন্তর", phone: "০১৬২৬-৭৩০৮৮২", address: "" },
+    { no: "১১", name: "মো: ইমন", phone: "০১৬৯০-২০৮১৩২", address: "" },
+    { no: "১২", name: "মো: ফারদিন", phone: "০১৭৪৭-০০৬১১০", address: "" },
+    { no: "১৩", name: "মো: গোলাম রাব্বি", phone: "০১৮৬০-৬৫৮৬৪৫", address: "" },
+    { no: "১৪", name: "মো: বাইজিদ", phone: "০১৭৫০-৭০৬২২৪", address: "" },
+    { no: "১৫", name: "মো: হিমেল", phone: "০১৯১১-১২৫৭৫৬", address: "" },
+    { no: "১৬", name: "মো: জাবেদ", phone: "০১৭৯০-৩৬৬৫৪২", address: "" },
+    { no: "১৭", name: "মো: কাইয়ুম", phone: "০১৭৫৮-৫১২০০২", address: "" },
+    { no: "১৮", name: "মো: খায়ের", phone: "০১৯৬১-৬৫০৬০৫", address: "" },
+    { no: "১৯", name: "মো: মামুন", phone: "০১৮৭৮-৬৩৯৫৭৬", address: "" },
+    { no: "২০", name: "মো: মান্নান", phone: "০১৭২০-২৩৮৮৩৮", address: "" },
+    { no: "২১", name: "মো: মানসুর", phone: "", address: "" },
+    { no: "২২", name: "মো: মনসুর", phone: "০১৮৯০-৮৬৯১০৬", address: "" },
+    { no: "২৩", name: "মো: নাছির", phone: "০১৮১৪-৮৬২৫৩৫", address: "" },
+    { no: "২৪", name: "মো: রাসেল", phone: "০১৭৫৩-৫৭৪১৭৫", address: "" },
+    { no: "২৫", name: "মো: রাশেদ", phone: "০১৬৪১-৫৫১৩৪১", address: "" },
+    { no: "২৬", name: "মো: রিফাত", phone: "০১৭৯৯-২৩৭৫৬৭", address: "" },
+    { no: "২৭", name: "মো: আলামিন", phone: "০১৭৭০-০৮৬১১৩", address: "" },
+    { no: "২৮", name: "মো: শাওয়ন", phone: "০১৯৭১-৭৭৩১৮১", address: "" },
+    { no: "২৯", name: "মো: শরিফ", phone: "০১৮২০-৬৪৮০৭৯", address: "" },
+    { no: "৩০", name: "মো: সিরাত", phone: "০১৯৩৪-৮০৭৫৯২", address: "" },
+    { no: "৩১", name: "মো: তানজিদ", phone: "০১৭৫০-৭৮৪২১০", address: "" },
+    { no: "৩২", name: "মো: আরফিন", phone: "০১৮৪০-৮৫৩৭২৯", address: "" },
+    { no: "৩৩", name: "মো: সিয়াম", phone: "০১৭৪১-৮৪৫২৮২", address: "" },
+    { no: "৩৪", name: "মো: সাগর", phone: "+9650570310863", address: "" },
+    { no: "৩৫", name: "মো: রাকিব", phone: "০১৮২৬-৯৯৮১৮৭", address: "" },
+    { no: "৩৬", name: "মো: শাহিন", phone: "০১৯৯৭-৪৯১৯৪৩", address: "" },
+    { no: "৩৭", name: "মো: সায়িদ", phone: "", address: "" },
+    { no: "৩৮", name: "মো: হাসান", phone: "০১৯৩২-৫৩২৬৯৯", address: "" },
+    { no: "৩৯", name: "মো: মাহাদি", phone: "০১৭৭২-৮৬৪৫৯৮", address: "" },
+    { no: "৪০", name: "মো: রিয়াজ", phone: "", address: "" },
+    { no: "৪১", name: "মো: শুভ", phone: "", address: "" },
+    { no: "৪২", name: "মো: মাহফুজ", phone: "০১৬১৬-৫৬৩৫০৩", address: "" },
+    { no: "৪৩", name: "মো: মাহমুদ", phone: "০১৮১৫-৪৩৪৮৭১", address: "" },
+    { no: "৪৪", name: "মো: সুজন মিয়া", phone: "০১৭৭১-৩৫১৫১৮", address: "" },
+    { no: "৪৫", name: "মো: সাকিব", phone: "", address: "" },
+    { no: "৪৬", name: "গোলাম কিবরিয়া", phone: "০১৭৮৯-৫৫৩০১০", address: "" },
+    { no: "৪৭", name: "মো: জসিম", phone: "০১৭২৬-৯৫১৭৮৭", address: "" },
+    { no: "৪৮", name: "মো: নাজমুল হাসান", phone: "", address: "" },
+    { no: "৪৯", name: "মো: মনির", phone: "০১৯১৩-২১৭৬০১", address: "" },
+    { no: "৫০", name: "মো: সাকিব কমার্স", phone: "০১৬৪৬-২৪৭৭২০", address: "" },
+    { no: "৫১", name: "মো: কামরুল", phone: "", address: "" }
+];
+
+const femaleMembers = [
+    { no: "৫২", name: "সাবিয়া পিয়াস সেতু", phone: "", address: "" },
+    { no: "৫৩", name: "সানজিদা ইসলাম শান্তা", phone: "", address: "" },
+    { no: "৫৪", name: "আরিফা আক্তার মিম", phone: "", address: "" },
+    { no: "৫৫", name: "মারিয়া জাহান মিতু", phone: "", address: "" },
+    { no: "৫৬", name: "ঋতু", phone: "", address: "" },
+    { no: "৫৭", name: "সোনিয়া আক্তার", phone: "", address: "" },
+    { no: "৫৮", name: "নিশা আক্তার", phone: "", address: "" },
+    { no: "৫৯", name: "জান্নাত আক্তার", phone: "", address: "" },
+    { no: "৬০", name: "সালমা আক্তার", phone: "", address: "" },
+    { no: "৬২", name: "রেশমা আক্তার", phone: "", address: "" },
+    { no: "৬৩", name: "তানিয়া মাহমুদ", phone: "", address: "" }
+];
+
+const createMemberRows = (members, tbodyId) => {
+    const tbody = document.getElementById(tbodyId);
+    let html = '';
+    members.forEach(member => {
+        let displayPhone = member.phone;
+        if(displayPhone === '০০' || displayPhone === '00' || displayPhone.trim() === '') {
+            displayPhone = '-';
+        }
+        html += `<tr>
+            <td>${member.no}</td>
+            <td>${member.name}</td>
+            <td>${displayPhone}</td>
+            <td>${member.address || '-'}</td>
+        </tr>`;
+    });
+    tbody.innerHTML = html;
+};
+
+createMemberRows(maleMembers, 'male-members-tbody');
+createMemberRows(femaleMembers, 'female-members-tbody');
+
+
+const gal=[["gallery-1.jpg","বিদ্যালয় প্রাঙ্গণে ব্যাচের বন্ধুদের মিলনমেলা"],["gallery-2.jpg","বন্ধুদের আড্ডা ও আনন্দঘন মুহূর্ত"],["gallery-3.jpg","ঈদ সামগ্রীর প্যাকেট তৈরির কাজে বন্ধুরা"],["gallery-4.jpg","শ্রেণিকক্ষে সদস্যদের সম্মিলন"],["gallery-5.jpg","বিতরণের জন্য প্রস্তুত ঈদ সামগ্রীর প্যাকেট"],["gallery-6.jpg","বন্ধুদের সাথে আপ্যায়ন ও আড্ডা"]];
+const GI=i=>`<figure class="gi" onclick="lb(${i})"><img loading="lazy" src="images/${gal[i][0]}" alt="${gal[i][1]}"><figcaption>${gal[i][1]}</figcaption></figure>`;
+document.getElementById('gal').innerHTML=gal.map((g,i)=>GI(i)).join('');
+document.getElementById('galh').innerHTML=[0,2,4].map(GI).join('');
+function lb(i){document.getElementById('lbi').src='images/'+gal[i][0];document.getElementById('lbx').style.display='flex'}
+function cp(n,b){(navigator.clipboard?navigator.clipboard.writeText(n):Promise.reject()).then(()=>{b.textContent='✔ কপি হয়েছে'}).catch(()=>{prompt('নম্বর কপি করুন:',n)});setTimeout(()=>b.textContent='নম্বর কপি করুন',2000)}
+
+// ---- Fix Router for Menu Links ----
+const nav=document.getElementById('nav');
+document.getElementById('bg').onclick=()=>nav.classList.toggle('open');
+
+function navTo(pageId) {
+    // Hide all pages
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('on'));
+    // Show target page
+    const targetPage = document.getElementById(pageId);
+    if(targetPage) {
+        targetPage.classList.add('on');
+    } else {
+        document.getElementById('home').classList.add('on');
+    }
+    
+    // Update active class on nav
+    document.querySelectorAll('nav a').forEach(a => {
+        if(a.getAttribute('href') === '#' + pageId || a.getAttribute('onclick') === `navTo('${pageId}')`) {
+            a.classList.add('act');
+        } else {
+            a.classList.remove('act');
+        }
+    });
+
+    // Close mobile menu if open
+    nav.classList.remove('open');
+    
+    // Update URL hash without causing a jump if possible, or just scroll to top
+    window.location.hash = pageId;
+    window.scrollTo(0, 0);
+}
+
+// Initial load routing based on hash
+function initRoute(){
+  let h=(location.hash||'#home').slice(1);
+  navTo(h);
+}
+// Use DOMContentLoaded to ensure elements exist before routing
+document.addEventListener("DOMContentLoaded", initRoute);
+// Handle browser back/forward buttons
+window.addEventListener('hashchange', () => {
+    let h=(location.hash||'#home').slice(1);
+    navTo(h);
+});
+
+// ---- Photo preview ----
+document.getElementById('ph').onchange=e=>{
+  const f=e.target.files[0],pv=document.getElementById('pv');
+  if(f){pv.src=URL.createObjectURL(f);pv.style.display='block'}
+};
+
+// ---- Registration submit ----
+const EMAIL='mashsscbatchfdn2021@gmail.com', WA='8801302985478';
+function formText(){
+  const g=i=>document.getElementById(i).value.trim();
+  return `এম.এ.এইচ.এস. এসএসসি ব্যাচ ২০২১ ফাউন্ডেশন - সদস্য ফরম\n\nনাম: ${g('f_name')}\nপিতা/স্বামী: ${g('f_father')}\nমাতা: ${g('f_mother')}\nজন্ম তারিখ: ${g('f_dob')}\nধর্ম: ${g('f_rel')}\nপেশা: ${g('f_job')}\nরক্তের গ্রুপ: ${g('f_blood')}\nস্থায়ী ঠিকানা: ${g('f_perm')}\nবর্তমান ঠিকানা: ${g('f_pres')}\nপরিচয়পত্র নং: ${g('f_nid')}\nমোবাইল: ${g('f_mob')}\n\nঅঙ্গীকারনামা: সম্মত\nতারিখ: ${g('f_date')}\nস্বাক্ষর: ${g('f_sign')}\n\n(ছবি আলাদাভাবে সংযুক্ত করুন)`;
+}
+function sendForm(t){
+  const g=i=>document.getElementById(i).value.trim();
+  if(!g('f_name')||!g('f_father')||!g('f_mother')||!g('f_dob')||!g('f_perm')||!g('f_pres')||!g('f_mob')){alert('অনুগ্রহ করে * চিহ্নিত সব ঘর পূরণ করুন।');return}
+  if(!document.getElementById('f_ok').checked){alert('অঙ্গীকারনামায় সম্মতি দিন।');return}
+  const txt=formText();
+  if(t==='mail') location.href=`mailto:${EMAIL}?subject=${encodeURIComponent('সদস্য ফরম - '+g('f_name'))}&body=${encodeURIComponent(txt)}`;
+  else window.open(`https://wa.me/${WA}?text=${encodeURIComponent(txt)}`,'_blank');
+}
+function sendMsg(){
+  const n=document.getElementById('c_name').value,c=document.getElementById('c_con').value,m=document.getElementById('c_msg').value;
+  if(!m.trim()){alert('বার্তা লিখুন।');return}
+  location.href=`mailto:${EMAIL}?subject=${encodeURIComponent('ওয়েবসাইট থেকে বার্তা - '+n)}&body=${encodeURIComponent(m+'\n\nনাম: '+n+'\nযোগাযোগ: '+c)}`;
+}
+</script>
+</body>
+</html>
